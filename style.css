@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color) !important;
+  height: 100vh !important;
+  width: 100% !important;
+  font-family: "Poppins", sans-serif !important;
+}
+.container {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+.navbar-my-name {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+.navbar-my-name:hover {
+  transform: scale(1.1);
+}
+.navbar-my-name:hover .navbar-my-name-S {
+  text-shadow: 0 0 15px var(--theme-color);
+}
+
+.navbar-my-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid var(--theme-color); /* Adjust color and thickness as needed */
+  border-left: 3px solid var(--theme-color);
+}
+.navbar-my-name::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid var(--theme-color); /* Adjust color and thickness as needed */
+  border-right: 3px solid var(--theme-color);
+}
+.navbar-my-name-S {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  font-style: italic;
+  margin-right: 7px;
+  color: var(--theme-color);
+}
+.navbar-options {
+  margin: 0 10rem;
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.navbar-section {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  transition: border-bottom 0.2s ease;
+}
+.navbar-section::after {
+  position: absolute;
+}
+.navbar-section.active,
+.navbar-section:hover {
+  color: var(--theme-color);
+  border-bottom: 3px solid var(--theme-color);
+  text-decoration: none;
+ 
+}
+.navbar-cv {
+  cursor: pointer;
+  font-size: 18px;
+  border: 3px solid var(--theme-color);
+  padding: 13px 17px;
+  color: var(--theme-color);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  border-radius: 25px;
+}
+.navbar-cv:hover {
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--theme-color);
+  font-weight: 700;
+}
