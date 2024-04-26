@@ -1,8 +1,8 @@
 const nav_bar_icon = document.querySelector(".fa-solid");
 const navbar_options =document.querySelector(".navbar-options");
 const navbar = document.querySelector(".navbar");
-const navbar_section = document.querySelectorAll(".navbar-section")
-
+const navbar_section = document.querySelectorAll(".navbar-section");
+const nav_cv_in_mobile=document.querySelector(".nav-cv-in-mobile");
 
 var isNavbarOpen = false;
 nav_bar_icon.addEventListener("click",()=>{
@@ -13,6 +13,7 @@ nav_bar_icon.addEventListener("click",()=>{
         navbar_section.forEach(function(section){
             section.style.display="block";
         })
+        nav_cv_in_mobile.style.display="flex";
         }
         
     else{
@@ -21,6 +22,7 @@ nav_bar_icon.addEventListener("click",()=>{
         navbar_section.forEach(function(section){
             section.style.display="none";
         })
+        nav_cv_in_mobile.style.display="none";
         }
     }
    
