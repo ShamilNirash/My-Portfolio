@@ -20,7 +20,7 @@ nav_bar_icon.addEventListener("click",()=>{
         
     else{
         navbar_options.style.display="none";
-        navbar.style.height=" 0vh";
+        navbar.style.height=" 15vh";
         navbar_section.forEach(function(section){
             section.style.display="none";
         })
@@ -34,6 +34,12 @@ navLinks.forEach(function(navLink) {
         
       navLink.addEventListener('click', function(e) {
          e.preventDefault();
+         navbar_options.style.display="none";
+         navbar.style.height=" 15vh";
+         navbar_section.forEach(function(section){
+             section.style.display="none";
+         })
+         nav_cv_in_mobile.style.display="none";
         var targetId = this.getAttribute('href');
         sections.forEach((section)=>{
             navLinks.forEach((link)=>{
