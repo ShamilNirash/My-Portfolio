@@ -34,12 +34,15 @@ navLinks.forEach(function(navLink) {
         
       navLink.addEventListener('click', function(e) {
          e.preventDefault();
-         navbar_options.style.display="none";
+         if(window.innerWidth < 900){
+            navbar_options.style.display="none";
          navbar.style.height=" 15vh";
          navbar_section.forEach(function(section){
              section.style.display="none";
          })
          nav_cv_in_mobile.style.display="none";
+         }
+         
         var targetId = this.getAttribute('href');
         sections.forEach((section)=>{
             navLinks.forEach((link)=>{
@@ -47,11 +50,6 @@ navLinks.forEach(function(navLink) {
             })
             this.classList.add("active");
             if(section.getAttribute('id')== targetId){
-                console.log('section id',section.getAttribute('id'));
-                console.log("target id ", targetId)
-                console.log(navLink)
-
-                console.log(navLink)
                 section.scrollIntoView({ behavior: 'smooth' });                
             }
         })
@@ -71,8 +69,7 @@ navLinks.forEach(function(navLink) {
             if(top >= offset && top<offset+height){
                 navLinks.forEach(links=>{
                     links.classList.remove('active');
-                    links.classList.add('normal')
-                    console.log(links);
+                    links.classList.add('normal');
                     document.querySelector('.navbar-options a[href*='+ id +']').classList.add('active');
                     document.querySelector('.navbar-options a[href*='+ id +']').classList.remove('normal');
 

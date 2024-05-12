@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: var(--background-color) !important;
+  background-color: var(--background-color-1) !important;
   height: 100vh !important;
   width: 100% !important;
   font-family: "Poppins", sans-serif !important;
@@ -41,7 +41,7 @@ h3 {
   align-items: center;
   margin-bottom: 0 !important;
   color: var(--font-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   flex-wrap: nowrap;
 }
 
@@ -229,7 +229,6 @@ a {
     color: var(--theme-color);
     font-size: 2.3rem;
   }
-  
 }
 @media (max-width: 350px) {
   .navbar-my-name-S {
@@ -239,14 +238,14 @@ a {
     color: var(--theme-color);
     font-size: 2rem;
   }
-  .navbar{
+  .navbar {
     width: 100%;
   }
-  .navbar-section{
-    font-size:13px;
+  .navbar-section {
+    font-size: 13px;
     margin-bottom: 1rem;
   }
-  .navbar-mobile-view{
+  .navbar-mobile-view {
     padding: 0;
   }
 }
@@ -292,7 +291,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   animation: showRight 1s ease forwards;
   animation-delay: 0.6s;
 }
@@ -308,7 +307,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   animation: showRight 1s ease forwards;
   animation-delay: 1s;
 }
@@ -413,7 +412,7 @@ a {
 
 .navbar-cv:hover {
   background-color: var(--theme-color);
-  color: var(--background-color);
+  color: var(--background-color-1);
   transform: scale(1.1);
   box-shadow: 0 0 25px var(--theme-color), 0 0 25px var(--theme-color),
     0 0 25px var(--theme-color);
@@ -570,7 +569,7 @@ a {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--background-color-1);
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
   }
@@ -592,7 +591,7 @@ a {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--background-color-1);
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
   }
@@ -654,155 +653,166 @@ a {
 /* About section design start ... */
 .about-section {
   height: 100vh;
+  width: 100%;
+  padding: 0 6%;
+  background-color: var(--background-color-2);
 }
+
+.about-section-body-profile-pic {
+  display: flex;
+  height: 85vh;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+}
+.about-section-body-profile-pic img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: var(--background-color-1);
+  border: 3px solid var(--theme-color);
+  box-shadow: 0 2px 4px 4px var(--theme-color);
+}
+.about-section-body-profile-pic img:hover {
+  box-shadow: 0 0 25px var(--theme-color), 0 0 25px var(--theme-color),
+    0 0 25px var(--theme-color);
+}
+
 .about-section-body {
   height: 85vh;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .about-section h1 {
-  margin-top: 2rem;
+  padding: 2rem 0;
   font-size: 4rem;
+  font-weight: 800;
   text-align: center;
   color: var(--font-color);
-  padding-bottom: 2rem;
   margin-top: 0rem;
 }
-ol,
-ul {
-  margin-left: 2rem;
-}
-
-.about-section-content {
+.about-section-body-description {
+  height: 85vh;
   display: flex;
   flex-direction: column;
-  color: var(--background-color);
-  background-color: var(--font-color);
-  height: 38vh;
-  width: 40%;
-  padding: 0rem 3rem 3rem 3rem;
-  border-radius: 20px;
-  border: 3px solid var(--theme-color);
-  box-shadow: 0 0 5px var(--theme-color), 0 0 5px var(--theme-color),
-    0 0 5px var(--theme-color);
+  justify-content: center;
+  width: 50%;
 }
-
-.about-section-content:hover {
+.about-section-body-description-my-name {
+  font-size: 3.75rem;
+  color: var(--theme-color);
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+li {
+  list-style: none;
   color: var(--font-color);
-  background-color: var(--theme-color);
-  transition: 1s ease;
-  border: 3px solid var(--font-color);
-  box-shadow: 0 0 5px var(--font-color), 0 0 5px var(--font-color),
-    0 0 5px var(--font-color);
-  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 2rem;
 }
-.about-section-content-body {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-}
-.about-section-content h3 {
-  text-align: center;
-  padding: 2rem 0;
-  margin: 0;
+li span {
   font-weight: 700;
 }
-.about-section-content-description {
-  font-size: 16px;
-  font-weight: 500;
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+
+@media (max-width: 900px) {
+  .about-section-body {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+  }
+  .about-section-body-profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+  }
+  .about-section-body-profile-pic img {
+    height: 270px;
+    width: 270px;
+  }
+  .about-section-body-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-section-body-description-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+  }
+
+  .about-section-body-description-my-name {
+    font-size: 3.25rem;
+    text-align: center;
+  }
+  li {
+    font-size: 18px;
+  }
+  .about-section h1 {
+    font-size: 3.75rem;
+  }
+  .about-section-body-description-my-name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
-.about-section-content-second-description {
-  height: 60%;
-}
-.about-section-content-body h3 {
-  font-size: 18px;
-  padding-top: 0px;
-  padding-bottom: 1vh;
-  text-align: left;
-}
-.about-section-content-parent-body-divide {
-  width: 90%;
-  height: 100%;
-}
-.about-section-content-body-divide {
-  display: flex;
-  justify-content: space-between;
-  height: 70%;
-  width: 100%;
-}
-.dataBase-second-description {
-  height: 30%;
-}
-.about-section-content-second-description {
-  height: 30%;
-}
-.about-section-second-content h3 {
-  padding-bottom: 1vh;
+@media (max-width: 700px) {
+  .about-section h1 {
+    font-size: 3.5rem;
+  }
+  .about-section-body-profile-pic {
+    width: 100%;
+    height: 40vh;
+  }
+  .about-section-body-profile-pic img {
+    height: 250px;
+    width: 250px;
+  }
+  .about-section-body-description {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-section-body-description-my-name {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .about-section-body-description-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  li {
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 750px) {
-  ul {
-    margin-left: 1.5rem;
+@media (max-width: 380px) {
+  .about-section-body-profile-pic img {
+    height: 225px;
+    width: 225px;
   }
-  .about-section-content {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .about-section h1 {
+    font-size: 3.25rem;
   }
-}
-/* @media (max-width: 900px) {
-  .about-section-content {
-    padding: 0rem 2rem 2rem 2rem;
+  .about-section-body-description-my-name {
+    font-size: 2.55rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  .personalTraits-second-content {
-    padding-right: 0rem ;
-  }
-  .about-section-content-parent-body-divide {
-    width: 90%;
-  }
-  .about-section-content-description {
+  li {
     font-size: 15px;
   }
- 
-  ol,
-  ul {
-    margin-left: 1rem;
-  }
 }
-@media (max-width: 750px) {
-  .about-section-content-body-divide {
-    flex-direction: column;
-    height: 60%;
-  }
-  ol,
-  ul {
-    margin-bottom: 0px !important;
-  }
-  .about-section-content {
-    height: 27rem;
-  }
-  .about-section-content-body h3 {
-    padding-bottom: 1rem;
-  }
-  .about-section-content {
-  }
-
-  .about-section-content-description li {
-    margin-bottom: 0;
-  }
-  
-}
-
-@media(max-width:650px){
-  
-}
- */
 /* About section design end ... */
 
 /* education section start ... */
