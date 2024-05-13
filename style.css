@@ -818,23 +818,34 @@ li span {
 /* education section start ... */
 .education-section {
   height: 100vh;
+  padding: 0 6% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.educational-section-header h1 {
-  margin-bottom: 5rem;
+ 
+.education-section-header{
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-section-header h1 {
   font-size: 4rem;
   color: var(--font-color);
   font-weight: 800;
-  text-align: center;
 }
 
 .education-timeline-items {
   max-width: 1280px;
+  height: 85vh;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -936,6 +947,25 @@ li span {
   font-size: 16px;
   font-weight: 500;
 }
+.timeline-content h3{
+  margin: 1rem 0 !important;
+}
+@media(max-width:1100px){
+  .timeline-date {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  .timeline-content h3 {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  .timeline-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 
 @media (max-width: 950px) {
   .education-timeline-item:nth-child(odd) {
@@ -955,48 +985,30 @@ li span {
   }
 }
 
-@media (max-width: 800px) {
-  .education-timeline-item:nth-child(odd) {
-    padding-right: 48.65%;
-  }
 
-  .education-timeline-item:nth-child(even) {
-    padding-left: 48.65%;
-  }
 
-  .timeline-content p {
-    font-size: 13px;
-  }
-
-  .timeline-content h3 {
-    font-size: 18px;
-  }
-
-  .timeline-content {
-    padding: 1rem 1.5rem;
-  }
+@media (max-width: 900px) {
+  
+.education-section-header h1{
+  font-size: 3.75rem;
 }
-
-@media (max-width: 650px) {
-  .education-section {
-    padding-top: 2rem;
-  }
-
   .education-timeline-items {
     display: block;
     margin-left: 8%;
+    
   }
+ 
 
   .education-timeline-item:nth-child(odd) {
     align-items: flex-start;
     text-align: left;
     padding-right: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 5%;
   }
 
   .education-timeline-item:nth-child(even) {
     padding-left: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 5%;
   }
 
   .timeline-dot {
@@ -1004,24 +1016,127 @@ li span {
   }
 
   .timeline-body {
-    margin-top: -3rem;
+  }
+  .timeline-date {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+  .timeline-content h3 {
+    font-weight: 800;
+    font-size: 22px;
+  }
+  
+  .timeline-content p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media(max-width:700px){
+  .education-timeline-item:nth-child(odd){
+    margin-bottom: 5rem;
+  }
+  .education-timeline-item:nth-child(even) {
+    margin-bottom: 5rem;
+  }
+  .education-timeline-items{
+    margin-left: 0;
+  }
+  .education-section-header h1{
+    font-size: 3.5rem;
+  }
+  .timeline-dot {
+    margin-left: -1.8%;
+  }
+  .timeline-date {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .timeline-content h3 {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+  .timeline-content p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .education-timeline-items{
+    height: 80vh;
+  }
+ 
+}
+
+@media (max-width: 450px) {
+  .education-timeline-item:nth-child(odd){
+    margin-bottom: 2.5rem;
+  }
+  .education-timeline-item:nth-child(even) {
+    margin-bottom: 2.5rem;
+  }
+  
+  .timeline-dot {
+    margin-left: -2.25%;
+  }
+ 
+ 
+  .timeline-date {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .timeline-content h3 {
+    font-weight: 800;
+    font-size: 16px;
+  }
+  
+  .timeline-content p {
+    font-size: 11px;
+    font-weight: 500;
   }
 }
 
 @media (max-width: 410px) {
-  .timeline-dot {
-    margin-left: -2.25%;
+  
+  .education-section-header h1{
+    font-size: 3.25rem;
   }
-}
-
-@media (max-width: 350px) {
   .timeline-dot {
     margin-left: -2.5%;
   }
 
-  .education-section {
-    padding-top: 22rem;
+  
+  .timeline-date {
+    font-size: 12px;
+    font-weight: 700;
   }
+  
+  .timeline-content h3 {
+    font-weight: 800;
+    font-size: 14px;
+  }
+  
+  .timeline-content p {
+    font-size: 9px;
+    font-weight: 500;
+  }
+}
+@media(max-width:350px){
+  .education-timeline-item:nth-child(odd){
+    margin-bottom: 1.5rem;
+  }
+  .education-timeline-item:nth-child(even) {
+    margin-bottom: 1.5rem;
+  }
+  .timeline-content{
+    padding: 0.5rem 1rem;
+  }
+  .education-timeline-items{
+    height: 80vh;
+  }
+ 
 }
 
 /* education section end ... */
