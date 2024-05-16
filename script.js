@@ -5,7 +5,10 @@ const navbar_section = document.querySelectorAll(".navbar-section");
 const nav_cv_in_mobile=document.querySelector(".nav-cv-in-mobile");
 const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll(".navbar-options a");
-
+const contactSubmitBtn = document.querySelector(".contact-section-submitBtn");
+const username =document.getElementById('form-name');
+const email=document.getElementById('form-email');
+const userMessage = document.getElementById('form-message');
 var isNavbarOpen = false;
 nav_bar_icon.addEventListener("click",()=>{
     isNavbarOpen= !isNavbarOpen;
@@ -102,9 +105,42 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
+
+
+contactSubmitBtn.addEventListener("click",()=>{
+    var msg = "name : "+ username.value +",  email : " +email.value+ ",   message : "+userMessage.value;
+   
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "shamil5034@gmail.com",
+        Password : "54FF94A33B9899CE371E17F2431BE56DFCC2",
+        To : 'shamilnirash@gmail.com',
+        From : "shamil5034@gmail.com",
+        Subject : "This is the subject",
+        Body : msg
+    }).then(
+      (message)=>{
+        if(message=='OK' && username.value!='' && email.value!='' && userMessage!=''){
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Your work has been saved",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              username.value='';
+              email.value='';
+              userMessage.value='';
+        }
+        else{
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!",
+              });
+        }
+      }
+    );
+})

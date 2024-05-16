@@ -41,7 +41,7 @@
           <a class="navbar-section " id="about" href="about">About</a>
           <a class="navbar-section" id="education" href="education">Education</a>
           <a class="navbar-section" id="projects" href="projects">Projects</a>
-          <a class="navbar-section" id="contact" href="contact">Contact</a>
+          <a class="navbar-section" id="contact" href="contact">Contact Me</a>
           <div class="nav-cv-in-mobile">
             <div class="navbar-cv">Download CV</div>
           </div>
@@ -291,7 +291,32 @@
 </div>
   <!-- project section end ... -->
 
-  <script src="script.js"></script>
+<!--Contact section start ...  -->
+<div class="contact-section section" id="contact">
+  <div class="contact-section-heading">
+    <h1>Contact Me</h1>
+  </div>
+    <div class="contact-section-form">
+      <div><label for="name">Your name</label><br>
+        <input type="text" id="form-name" placeholder="Eg: John Francis"></div>
+      
+       <div><label for="email">Your email</label><br>
+         <input type="email" id="form-email" placeholder="Eg: John@example.com"></div>
+      
+      <div>
+        <label for="message">Message</label><br>
+         <input class='message' id="form-message" type="text" placeholder="write message here ...">
+       </div>
+     <button class="contact-section-submitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </div>
+
+</div>
+<!-- Contact section end -->
+<!-- connect smtpjs to send mails -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<!-- add sweet alert cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <script src="script.js"></script>
 </body>
 
 </html>
