@@ -1447,3 +1447,126 @@ li span {
   }
 }
 /* Project section end ... */
+
+/* Contact section start ... */
+.contact-section{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color-1);
+  padding: 0 6%;
+}
+.contact-section-heading{
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section-heading h1{
+  color: var(--font-color);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+
+.contact-section-form{
+  color: var(--font-color);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.contact-section-form label{
+  font-size: 22px;
+}
+.contact-section-form input{
+  font-size: 18px;
+  height: 4rem;
+  width: 50rem;
+  padding: 1rem 2rem;
+  background-color: var(--background-color-2);
+  border: 3px solid var(--theme-color);
+  letter-spacing: 1px;
+  border-radius: 10px;
+  
+}
+
+.contact-section-form .message{
+  height: 15rem;
+  display: flex;
+  align-items: self-start;
+}
+.contact-section-form .message input[type="text"]::placeholder {
+  vertical-align: top;
+}
+.contact-section-form input:focus{
+  outline: none;
+}
+.contact-section-form button{
+  width: 20rem;
+ height: 4.5rem;
+  background-color: var(--theme-color);
+  color: var(--background-color-1);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section-form button:hover{
+  transition: .3s ease;
+  background-color: transparent;
+  color: var(--font-color);
+  box-shadow: 0 0 15px var(--theme-color), 0 0 15px var(--theme-color),
+  0 0 15px var(--theme-color);  
+  font-weight: 600;
+}
+.fa-paper-plane{
+  margin-right: 7px;
+}
+@media(max-width:900px){
+  .contact-section-heading h1{
+    font-size: 3.75rem;
+  }
+  .contact-section-form label{
+    font-size: 20px;
+  }
+  .contact-section-form input{
+    width: 40rem;
+    font-size: 16px;
+  }
+  .contact-section-form button{
+    font-size: 17px;
+  }
+}
+@media(max-width:700px){
+  .contact-section-heading h1{
+    font-size: 3.5rem;
+  }
+  .contact-section-form label{
+    font-size: 19px;
+  }
+  .contact-section-form input{
+    font-size: 15px;
+    width: 35rem;
+  }
+  .contact-section-form button{
+    font-size: 16px;
+  }
+}
+@media(max-width:420px){
+  .contact-section-form input{
+    width: 27rem;
+  }
+}
+@media(max-width:350px){
+  .contact-section-form .message{
+    height: 10rem;
+  }
+}
+/* Contact section end ... */
