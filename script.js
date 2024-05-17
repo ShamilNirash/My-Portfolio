@@ -53,7 +53,7 @@ navLinks.forEach(function(navLink) {
             })
             this.classList.add("active");
             if(section.getAttribute('id')== targetId){
-                section.scrollIntoView({ behavior: 'smooth' });                
+                section.scrollIntoView({block: 'start', behavior: 'smooth' });                
             }
         })
         
