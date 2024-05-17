@@ -402,23 +402,25 @@ a {
   font-size: 18px;
   border: 3px solid var(--theme-color);
   padding: 13px 17px;
-  color: var(--theme-color);
   font-weight: 600;
   transition: transform 0.3s ease;
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 0 25px var(--theme-color);
 }
-
+.navbar-cv a{
+  color: var(--theme-color);
+}
 .navbar-cv:hover {
   background-color: var(--theme-color);
-  color: var(--background-color-1);
   transform: scale(1.1);
-  box-shadow: 0 0 25px var(--theme-color), 0 0 25px var(--theme-color),
+  box-shadow: 0 0 5px var(--theme-color), 0 0 5px var(--theme-color),
     0 0 25px var(--theme-color);
   font-weight: 700;
 }
-
+.navbar-cv:hover a{
+  color: var(--background-color-1);
+}
 .mobile-view-home-section {
   display: none;
 }
