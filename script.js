@@ -126,7 +126,7 @@ contactSubmitBtn.addEventListener("click",()=>{
             Swal.fire({
                 position: "center",
                 icon: "success",
-                title: "Your work has been saved",
+                title: "Your message send successfully!",
                 showConfirmButton: false,
                 timer: 1500
               });
@@ -139,6 +139,8 @@ contactSubmitBtn.addEventListener("click",()=>{
                 icon: "error",
                 title: "Oops...",
                 text: "Something went wrong!",
+                showConfirmButton: false,
+                timer: 1500
               });
         }
       }
