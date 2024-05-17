@@ -199,7 +199,7 @@ a {
   .nav-cv-in-mobile {
     width: 20rem;
     margin-top: 5rem;
-    justify-content: center;
+    justify-content: start;
   }
 
   .navbar-mobile-view {
@@ -604,6 +604,12 @@ a {
       width: 0;
     }
   }
+  .navbar-cv{
+    font-size: 16px;
+    padding: 10px 14px;
+  
+   
+  }
 }
 
 @media (max-width: 700px) {
@@ -627,6 +633,12 @@ a {
     height: 30vh;
     width: auto;
   }
+  .navbar-cv{
+    font-size: 14px;
+    padding: 9px 10px;
+  
+   
+  }
 }
 @media (max-width: 350px) {
   .mobile-view-home-section {
@@ -648,6 +660,12 @@ a {
   .mobile-view-home-section-social-media a {
     height: 3rem;
     width: 3rem;
+  }
+  .navbar-cv{
+    font-size: 13px;
+    padding: 7px 8px;
+  
+   
   }
 }
 
