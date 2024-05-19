@@ -17,8 +17,6 @@ nav_bar_icon.addEventListener("click",()=>{
         barIcon.classList.add('fa-rotate-90');
         navbar_options.style.display="flex" ; 
         navbar.style.height=" 100vh";
-        navbar.style.borderBottom ="1px solid gray";
-
         navbar_section.forEach(function(section){
             section.style.display="block";
         })
@@ -28,8 +26,7 @@ nav_bar_icon.addEventListener("click",()=>{
     else{
         barIcon.classList.remove('fa-rotate-90');
         navbar_options.style.display="none";
-        navbar.style.height=" 15vh";
-        navbar.style.borderBottom ="none";
+        navbar.style.height=" 15vh"; 
         navbar_section.forEach(function(section){
             section.style.display="none";
         })
