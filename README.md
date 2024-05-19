@@ -26,10 +26,9 @@ cd your-repo-name
 ```
 ### Running the Project
 
-(1)Navigate to the cloned directory.
-(2)Open index.html in your browser.
-
-
+- Navigate to the cloned directory.
+- Open index.html in your browser.
+  
 ## Usage
 
 ### Font Awesome
@@ -84,8 +83,8 @@ Add data attributes to your HTML elements to specify the animations:
 If you have suggestions or improvements, feel free to create a pull request or open an issue.
 
 ## Acknowledgments
-Font Awesome
-Google Fonts
-SMTP.js
-SweetAlert
-AOS
+- Font Awesome
+- Google Fonts
+- SMTP.js
+- SweetAlert
+- AOS
