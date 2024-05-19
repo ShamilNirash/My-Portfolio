@@ -9,11 +9,15 @@ const contactSubmitBtn = document.querySelector(".contact-section-submitBtn");
 const username =document.getElementById('form-name');
 const email=document.getElementById('form-email');
 const userMessage = document.getElementById('form-message');
+const barIcon = document.querySelector('.fa-bars');
 var isNavbarOpen = false;
+
+// navbar mobile view list button toggle  
 nav_bar_icon.addEventListener("click",()=>{
     isNavbarOpen= !isNavbarOpen;
     if(isNavbarOpen){
-        navbar_options.style.display="flex" ;
+        barIcon.classList.add('fa-rotate-90');
+        navbar_options.style.display="flex" ; 
         navbar.style.height=" 100vh";
         navbar_section.forEach(function(section){
             section.style.display="block";
@@ -22,20 +26,18 @@ nav_bar_icon.addEventListener("click",()=>{
         }
         
     else{
+        barIcon.classList.remove('fa-rotate-90');
         navbar_options.style.display="none";
-        navbar.style.height=" 15vh";
+        navbar.style.height=" 15vh"; 
         navbar_section.forEach(function(section){
             section.style.display="none";
         })
         nav_cv_in_mobile.style.display="none";
-        }
-    }
-   
-)
-    
+        }})
+
+// nav option toggle
 navLinks.forEach(function(navLink) {
-        
-      navLink.addEventListener('click', function(e) {
+              navLink.addEventListener('click', function(e) {
          e.preventDefault();
          if(window.innerWidth < 900){
             navbar_options.style.display="none";
@@ -45,8 +47,7 @@ navLinks.forEach(function(navLink) {
          })
          nav_cv_in_mobile.style.display="none";
          }
-         
-        var targetId = this.getAttribute('href');
+                 var targetId = this.getAttribute('href');
         sections.forEach((section)=>{
             navLinks.forEach((link)=>{
                 link.classList.remove('active');
@@ -55,13 +56,11 @@ navLinks.forEach(function(navLink) {
             if(section.getAttribute('id')== targetId){
                 section.scrollIntoView({block: 'start', behavior: 'smooth' });                
             }
-        })
-        
-      });
-     
-
+        })  
+      });  
     });
 
+    // Project mobile section carousel 
     window.onscroll=() =>{
         sections.forEach((section)=>{
             let top =window.scrollY;
@@ -80,8 +79,6 @@ navLinks.forEach(function(navLink) {
             }
         })
     }
-
-
 
     let slideIndex = 1;
 showSlides(slideIndex);
@@ -109,6 +106,7 @@ function showSlides(n) {
 }
 
 
+//contact section 
 contactSubmitBtn.addEventListener("click",()=>{
     var msg = "name : "+ username.value +",  email : " +email.value+ ",   message : "+userMessage.value;
    
