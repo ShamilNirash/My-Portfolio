@@ -121,6 +121,7 @@ h3 {
 .navbar-section:hover {
   color: var(--theme-color) !important;
   border-bottom: 3px solid var(--theme-color);
+  background-color: transparent !important;
 }
 
 .navbar-section:visited {
@@ -175,15 +176,25 @@ a {
 
 @media (max-width: 900px) {
   .navbar-options {
+    position: absolute;
+    z-index: 1;
+    right: -80rem;
+    top: 11vh;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2rem;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 89vh;
     display: none;
+    padding-top: 1rem;
+  
   }
 
   .navbar-section {
     margin-bottom: 3rem;
+    width: 100%;
     display: none;
+    margin-right: 0;
+
   }
 
   .navbar-mobile-bar {
@@ -198,8 +209,10 @@ a {
 
   .nav-cv-in-mobile {
     width: 20rem;
-    margin-top: 5rem;
-    justify-content: start;
+    margin-top: 35vh;
+    margin-bottom:2rem ;
+    justify-content: center;
+
   }
 
   .navbar-mobile-view {
@@ -208,7 +221,9 @@ a {
     align-items: flex-start;
     height: 15vh;
   }
-
+  .navbar-section{
+    color: var(--background-color-1);
+  }
   .navbar-my-name {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -220,6 +235,13 @@ a {
   .navbar-my-name-S {
     font-size: 40px;
   }
+  .normal{
+    color: var(--background-color-1) !important;
+  }
+  .navbar-section.active,
+.navbar-section:hover {
+  border-bottom: none;
+}
 }
 @media (max-width: 700px) {
   .navbar-my-name-S {
@@ -607,7 +629,7 @@ a {
   .navbar-cv{
     font-size: 16px;
     padding: 10px 14px;
-  
+    background-color: var(--background-color-1);
    
   }
 }
