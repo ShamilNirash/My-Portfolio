@@ -32,6 +32,9 @@ h3 {
 }
 
 .navbar-mobile-view {
+  top: 0;
+  z-index: 1000;
+  position: fixed;
   padding: 0 6%;
   width: 100%;
   height: 15vh;
@@ -47,13 +50,10 @@ h3 {
 
 .navbar-my-name {
   justify-self: flex-start;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500;
   position: relative;
-  padding: 5px;
   padding-right: 15px;
-  padding-bottom: 5px;
-  margin-top: 1rem;
   cursor: pointer;
   transition: transform 0.3s ease-in;
   text-align: center;
@@ -87,7 +87,7 @@ h3 {
 
 .navbar-my-name-S {
   font-family: "Dancing Script", cursive;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   font-style: italic;
   margin-right: 7px;
@@ -701,6 +701,7 @@ a {
   background-color: var(--background-color-2);
 }
 .about-section-heading{
+  padding-top: 20vh;
   height: 15vh;
   display: flex;
   align-items: center;
@@ -875,6 +876,7 @@ li span {
 }
  
 .education-section-header{
+  padding-top: 20vh;
   height: 15vh;
   width: 100%;
   display: flex;
@@ -1199,6 +1201,7 @@ li span {
   padding: 0 6%;
 }
 .project-section-heading{
+  padding-top: 20vh;
   height: 15vh;
   width: 100%;
   display: flex;
@@ -1500,6 +1503,7 @@ li span {
   padding: 0 6%;
 }
 .contact-section-heading{
+  padding-top: 18vh;
   display: flex;
   width: 100%;
   height: 15vh;
