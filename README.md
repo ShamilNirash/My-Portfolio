@@ -88,3 +88,13 @@ If you have suggestions or improvements, feel free to create a pull request or o
 - SMTP.js
 - SweetAlert
 - AOS
+
+## Releases
+
+You can download the latest version of this portfolio from the [Releases page](https://github.com/ShamilNirash/My-Portfolio/releases).
+
+### How to Use
+
+1. Go to the [Releases page](https://github.com/ShamilNirash/My-Portfolio/releases).
+2. Download the latest release ZIP file.
+3. Extract the ZIP file and open `index.html` in your web browser to view the portfolio.
