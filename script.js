@@ -11,6 +11,12 @@ const email = document.getElementById("form-email");
 const userMessage = document.getElementById("form-message");
 const barIcon = document.querySelector(".fa-bars");
 const mobileHomeSection = document.querySelector(".mobile-view-home-section");
+const aboutSection = document.querySelector(".about-section");
+const educationHomeSection = document.querySelector(".education-section");
+const projectSection = document.querySelector(".project-section");
+const contactMeSection = document.querySelector(".contact-section");
+const footerSection = document.querySelector(".footer");
+
 var isNavbarOpen = false;
 
 // navbar mobile view list button toggle
@@ -27,6 +33,11 @@ nav_bar_icon.addEventListener("click", () => {
     });
     nav_cv_in_mobile.style.display = "flex";
     mobileHomeSection.style.filter = "blur(15px)";
+    aboutSection.style.filter = "blur(15px)";
+    educationHomeSection.style.filter = "blur(15px)";
+    projectSection.style.filter = "blur(15px)";
+    contactMeSection.style.filter = "blur(15px)";
+    footerSection.style.filter = "blur(15px)";
   } else {
     navbar_options.style.transition = "0.3s ease";
     barIcon.classList.remove("fa-rotate-90");
@@ -40,6 +51,11 @@ nav_bar_icon.addEventListener("click", () => {
 
     nav_cv_in_mobile.style.display = "none";
     mobileHomeSection.style.filter = "blur(0px)";
+    aboutSection.style.filter = "blur(0px)";
+    educationHomeSection.style.filter = "blur(0px)";
+    projectSection.style.filter = "blur(0px)";
+    contactMeSection.style.filter = "blur(0px)";
+    footerSection.style.filter = "blur(0px)";
   }
 });
 
@@ -51,6 +67,11 @@ navLinks.forEach(function (navLink) {
       barIcon.classList.remove("fa-rotate-90");
       navbar_options.style.display = "none";
       mobileHomeSection.style.filter = "blur(0px)";
+      aboutSection.style.filter = "blur(0px)";
+      educationHomeSection.style.filter = "blur(0px)";
+      projectSection.style.filter = "blur(0px)";
+      contactMeSection.style.filter = "blur(0px)";
+      footerSection.style.filter = "blur(0px)";
       navbar.style.height = " 15vh";
       navbar_section.forEach(function (section) {
         section.style.display = "none";

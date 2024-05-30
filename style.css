@@ -179,11 +179,11 @@ a {
     position: absolute;
     z-index: 1;
     right: -80rem;
-    top: 11vh;
+    top: 15vh;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    height: 89vh;
+    height: 85vh;
     display: none;
     padding-top: 1rem;
   
@@ -198,7 +198,10 @@ a {
   }
 
   .navbar-mobile-bar {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
   }
 
   .navbar {
@@ -209,16 +212,16 @@ a {
 
   .nav-cv-in-mobile {
     width: 20rem;
-    margin-top: 35vh;
+    margin-top: 25vh;
     margin-bottom:2rem ;
     justify-content: center;
 
   }
 
   .navbar-mobile-view {
+    left: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
     height: 15vh;
   }
   .navbar-section{
@@ -268,7 +271,7 @@ a {
     margin-bottom: 1rem;
   }
   .navbar-mobile-view {
-    padding: 0;
+    padding: 0 6%;
   }
 }
 
