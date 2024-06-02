@@ -103,7 +103,12 @@ h3 {
   text-align: center;
   justify-content: space-around;
 }
-
+.navbar-options-first-tab {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
 .navbar-section {
   margin-right: 3rem;
   cursor: pointer;
@@ -181,18 +186,26 @@ a {
     right: -80rem;
     top: 15vh;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-around;
     height: 85vh;
     display: none;
     padding-top: 1rem;
+    width: 45%;
   }
-
+  .navbar-options-first-tab {
+    height: 10vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   .navbar-section {
     margin-bottom: 3rem;
     width: 100%;
     display: none;
+    text-align: start;
     margin-right: 0;
+    margin-left: 1rem;
+    color: var(--background-color-1);
   }
 
   .navbar-mobile-bar {
@@ -212,7 +225,8 @@ a {
     width: 20rem;
     margin-top: 25vh;
     margin-bottom: 2rem;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 1rem;
   }
 
   .navbar-mobile-view {
@@ -221,9 +235,7 @@ a {
     justify-content: space-between;
     height: 15vh;
   }
-  .navbar-section {
-    color: var(--background-color-1);
-  }
+
   .navbar-my-name {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -702,7 +714,7 @@ a {
   .fa-brands {
     font-size: 1.75rem;
   }
-  .mobile-view-home-section-social-media{
+  .mobile-view-home-section-social-media {
     margin-top: 1rem;
   }
   .mobile-view-home-section-social-media a {
@@ -736,7 +748,9 @@ a {
   justify-content: center;
   width: 100%;
 }
-
+.about-section-heading span {
+  color: var(--theme-color);
+}
 .about-section-body {
   height: 83vh;
   display: flex;
@@ -751,28 +765,61 @@ a {
   margin-top: 0rem;
 }
 .about-section-body-description {
-  height: 85vh;
+  height: 67vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  justify-content: space-between;
+  width: 100%;
 }
-.about-section-body-description-my-name {
-  font-size: 3.75rem;
+.about-section-body-description-about-me {
+  font-size: 17px;
+  color: var(--font-color);
+  font-weight: 400;
+}
+.about-section-body-description-personal-info {
+  margin-top: 2rem;
+}
+.about-section-body-description-personal-info h3 {
   color: var(--theme-color);
-  margin-bottom: 3rem;
-  font-weight: 600;
+  font-weight: 700;
+  text-decoration: underline;
 }
-li {
+.about-section-body-description-personal-info-body {
+  margin-top: 1rem;
+}
+.about-section-body-description li {
   list-style: none;
   color: var(--font-color);
-  font-size: 20px;
-  margin-bottom: 2rem;
+  font-size: 17px;
+  margin-bottom: 0.75rem;
 }
-li span {
+.about-section-body-description li span {
   font-weight: 700;
+  color: var(--theme-color);
 }
-
+.about-section-body-description-education {
+  margin-top: 2rem;
+}
+.about-section-body-description-education h3 {
+  color: var(--theme-color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.about-section-body-description-education-body {
+  font-size: 17px;
+  margin-top: 1rem;
+}
+/* @media(max-width:1200px){
+  .about-section-body-description-about-me{
+    font-size: 15px;
+  } 
+  .about-section-body-description li{
+    font-size: 15px;
+  }
+  .about-section-body-description-education-body{
+    font-size: 15p;
+  }
+} */
 @media (max-width: 900px) {
   .about-section-body {
     flex-direction: column;
@@ -780,10 +827,28 @@ li span {
     height: 80vh;
   }
   .about-section-body-description {
+    margin-top: 4rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 60vh;
+  }
+  .about-section-body-description-about-me {
+    font-size: 15px;
+    text-align: center;
+  }
+  .about-section-body-description li {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+  }
+  .about-section-body-description-education-body {
+    font-size: 15px;
+  }
+  .about-section-body-description-education h3 {
+    font-size: 22px;
+  }
+  .about-section-body-description-personal-info h3 {
+    font-size: 22px;
   }
   .about-section-body-description-content {
     display: flex;
@@ -798,9 +863,7 @@ li span {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  li {
-    font-size: 18px;
-  }
+
   .about-section h1 {
     font-size: 3.75rem;
   }
@@ -812,10 +875,11 @@ li span {
 
   .about-section-body-description {
     width: 100%;
-    height: 40vh;
+    height: 67vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    justify-content: space-between;
   }
   .about-section-body-description-my-name {
     text-align: center;
@@ -828,25 +892,56 @@ li span {
     align-items: flex-start;
     justify-content: space-between;
   }
-  li {
-    margin-bottom: 1rem;
-    font-size: 16px;
+  
+  .about-section-body-description-about-me {
+    font-size: 13px;
+  }
+  .about-section-body-description li {
+    font-size: 13px;
+  }
+  .about-section-body-description-education-body{
+    font-size: 13px;
+  }
+  .about-section-body-description-education h3 {
+    font-size: 20px;
+  }
+  .about-section-body-description-personal-info h3 {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .about-section h1 {
     font-size: 3.25rem;
   }
-  .about-section-body-description-my-name {
-    font-size: 2.55rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+  .about-section-body-description-about-me {
+    font-size: 11px;
   }
-  li {
-    font-size: 15px;
+  .about-section-body-description li {
+    font-size: 11px;
+    margin-bottom: 0.3rem;
   }
+  .about-section-body-description-education-body{
+    font-size: 11px;
+  }
+  .about-section-body-description-education h3 {
+    font-size: 18px;
+  }
+  .about-section-body-description-personal-info h3 {
+    font-size: 18px;
+  }
+  .about-section-body-description {
+     margin-top: 2rem;
 }
+.section-body-description-personal-info {
+  margin-top: 1rem;
+}
+.about-section-body-description-personal-info {
+  margin-top: 1rem;}
+  .about-section-body-description-education {
+    margin-top: 1rem;
+}}
 /* About section design end ... */
 
 /* education section start ... */
