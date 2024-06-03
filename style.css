@@ -892,14 +892,14 @@ a {
     align-items: flex-start;
     justify-content: space-between;
   }
-  
+
   .about-section-body-description-about-me {
     font-size: 13px;
   }
   .about-section-body-description li {
     font-size: 13px;
   }
-  .about-section-body-description-education-body{
+  .about-section-body-description-education-body {
     font-size: 13px;
   }
   .about-section-body-description-education h3 {
@@ -922,7 +922,7 @@ a {
     font-size: 11px;
     margin-bottom: 0.3rem;
   }
-  .about-section-body-description-education-body{
+  .about-section-body-description-education-body {
     font-size: 11px;
   }
   .about-section-body-description-education h3 {
@@ -932,28 +932,30 @@ a {
     font-size: 18px;
   }
   .about-section-body-description {
-     margin-top: 2rem;
-}
-.section-body-description-personal-info {
-  margin-top: 1rem;
-}
-.about-section-body-description-personal-info {
-  margin-top: 1rem;}
+    margin-top: 2rem;
+  }
+  .section-body-description-personal-info {
+    margin-top: 1rem;
+  }
+  .about-section-body-description-personal-info {
+    margin-top: 1rem;
+  }
   .about-section-body-description-education {
     margin-top: 1rem;
-}}
+  }
+}
 /* About section design end ... */
 
-/* education section start ... */
-.education-section {
+/* skills section start ... */
+.skill-section {
   height: 100vh;
-  padding: 0 6% 3%;
+  padding: 0 6%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.education-section-header {
+.skill-section-header {
   padding-top: 20vh;
   height: 15vh;
   width: 100%;
@@ -961,305 +963,103 @@ a {
   justify-content: center;
   align-items: center;
 }
-.education-section-header h1 {
+.skill-section-header h1 {
   font-size: 4rem;
   color: var(--font-color);
   font-weight: 800;
 }
-
-.education-timeline-items {
-  max-width: 1280px;
-  height: 85vh;
-  margin: 0;
+.skill-section-body {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 2rem;
+}
+.skill-section-body-card {
+  height: 120px;
+  width: 140px;
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-.education-timeline-items:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 5px;
-  background-color: var(--theme-color);
-}
-
-.education-timeline-item {
-  display: flex;
-  width: 100%;
-  position: relative;
-  color: var(--font-color);
-}
-
-.education-timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.education-timeline-item:nth-child(odd) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 49.25%;
-  text-align: right;
-}
-
-.education-timeline-item:nth-child(even) {
-  display: flex;
-  flex-direction: column;
-  padding-left: 49.25%;
-}
-
-.timeline-dot {
-  height: 21px;
-  width: 21px;
-  border-radius: 50%;
-  background-color: var(--theme-color);
-  box-shadow: 0 0 25px var(--theme-color), 0 0 50px var(--theme-color);
-}
-
-.timeline-body {
-  margin: -2rem 5rem;
-}
-
-.timeline-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  position: relative;
-  margin-top: 1rem;
   border: 3px solid var(--theme-color);
-  padding: 1rem 3rem;
-  border-radius: 30px;
+  padding: 0.5rem 0.25rem;
+  border-radius: 10px;
 }
-
-.timeline-content:hover {
-  color: var(--background-color-1);
-  transition: 1s ease;
-  box-shadow: 0 0 25px var(--theme-color);
-}
-
-.timeline-content:hover ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.skill-section-body-card:hover {
   background-color: var(--theme-color);
-  animation: educationSection 1s ease;
-  z-index: -1;
-  border-radius: 26px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-@keyframes educationSection {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
+.skill-section-body-card img {
+  height: 90px;
+  width: 75px;
+  object-fit: contain;
 }
-
-.timeline-date {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.timeline-content h3 {
-  font-weight: 800;
-}
-
-.timeline-content p {
+.skill-section-body-card div {
   font-size: 16px;
-  font-weight: 500;
+  color: var(--font-color);
+  font-weight: 700;
+  text-align: center;
 }
-.timeline-content h3 {
-  margin: 1rem 0 !important;
-}
-@media (max-width: 1100px) {
-  .timeline-date {
-    font-size: 17px;
-    font-weight: 700;
-  }
-
-  .timeline-content h3 {
-    font-weight: 800;
-    font-size: 20px;
-  }
-
-  .timeline-content p {
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 950px) {
-  .education-timeline-item:nth-child(odd) {
-    padding-right: 48.9%;
-  }
-
-  .education-timeline-item:nth-child(even) {
-    padding-left: 48.9%;
-  }
-
-  .timeline-content p {
-    font-size: 14px;
-  }
-
-  .timeline-content {
-    padding: 1rem 2rem;
-  }
-}
-
 @media (max-width: 900px) {
-  .education-section-header h1 {
+  .skill-section-header h1 {
     font-size: 3.75rem;
   }
-  .education-timeline-items {
-    display: block;
-    margin-left: 8%;
+  .skill-section-body-card {
+    height: 110px;
+    width: 120px;
+    margin: 4px;
   }
-
-  .education-timeline-item:nth-child(odd) {
-    align-items: flex-start;
-    text-align: left;
-    padding-right: 0;
-    margin-bottom: 5%;
+  .skill-section-body-card img {
+    height: 80px;
+    width: 65px;
   }
-
-  .education-timeline-item:nth-child(even) {
-    padding-left: 0;
-    margin-bottom: 5%;
-  }
-
-  .timeline-dot {
-    margin-left: -1.5%;
-  }
-
-  .timeline-body {
-  }
-  .timeline-date {
-    font-size: 17px;
-    font-weight: 700;
-  }
-
-  .timeline-content h3 {
-    font-weight: 800;
-    font-size: 22px;
-  }
-
-  .timeline-content p {
-    font-size: 15px;
-    font-weight: 500;
+  .skill-section-body-card div {
+    font-size: 14px;
   }
 }
-
 @media (max-width: 700px) {
-  .education-timeline-item:nth-child(odd) {
-    margin-bottom: 5rem;
-  }
-  .education-timeline-item:nth-child(even) {
-    margin-bottom: 5rem;
-  }
-  .education-timeline-items {
-    margin-left: 0;
-  }
-  .education-section-header h1 {
+  .skill-section-header h1 {
     font-size: 3.5rem;
   }
-  .timeline-dot {
-    margin-left: -1.8%;
+  .skill-section-body-card {
+    height: 80px;
+    width: 110px;
   }
-  .timeline-date {
-    font-size: 14px;
-    font-weight: 700;
+  .skill-section-body-card img {
+    height: 50px;
+    width: 65px;
   }
-
-  .timeline-content h3 {
-    font-weight: 800;
-    font-size: 18px;
-  }
-
-  .timeline-content p {
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .education-timeline-items {
-    height: 80vh;
-  }
-}
-
-@media (max-width: 450px) {
-  .education-timeline-item:nth-child(odd) {
-    margin-bottom: 2.5rem;
-  }
-  .education-timeline-item:nth-child(even) {
-    margin-bottom: 2.5rem;
-  }
-
-  .timeline-dot {
-    margin-left: -2.25%;
-  }
-
-  .timeline-date {
-    font-size: 13px;
-    font-weight: 700;
-  }
-
-  .timeline-content h3 {
-    font-weight: 800;
-    font-size: 16px;
-  }
-
-  .timeline-content p {
+  .skill-section-body-card div {
     font-size: 11px;
-    font-weight: 500;
+  }
+  .skill-section-body {
+    grid-template-columns: auto auto auto;
+  }
+  .skill-section-body {
+    height: 75vh;
+    padding-top: 1rem;
   }
 }
-
-@media (max-width: 410px) {
-  .education-section-header h1 {
+@media (max-width: 400px) {
+  .skill-section-header h1 {
     font-size: 3.25rem;
   }
-  .timeline-dot {
-    margin-left: -2.5%;
+  .skill-section-body-card {
+    height: 60px;
+    width: 80px;
   }
-
-  .timeline-date {
-    font-size: 12px;
-    font-weight: 700;
+  .skill-section-body-card img {
+    height: 30px;
+    width: 45px;
   }
-
-  .timeline-content h3 {
-    font-weight: 800;
-    font-size: 14px;
-  }
-
-  .timeline-content p {
+  .skill-section-body-card div {
     font-size: 9px;
-    font-weight: 500;
-  }
-}
-@media (max-width: 350px) {
-  .education-timeline-item:nth-child(odd) {
-    margin-bottom: 1.5rem;
-  }
-  .education-timeline-item:nth-child(even) {
-    margin-bottom: 1.5rem;
-  }
-  .timeline-content {
-    padding: 0.5rem 1rem;
-  }
-  .education-timeline-items {
-    height: 80vh;
   }
 }
 
-/* education section end ... */
+/* skills section end ... */
 
 /* Project section start ... */
 .project-section {
