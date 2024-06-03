@@ -1018,6 +1018,7 @@ a {
   .skill-section-body-card div {
     font-size: 14px;
   }
+ 
 }
 @media (max-width: 700px) {
   .skill-section-header h1 {
@@ -1047,18 +1048,28 @@ a {
     font-size: 3.25rem;
   }
   .skill-section-body-card {
-    height: 60px;
     width: 80px;
   }
   .skill-section-body-card img {
-    height: 30px;
-    width: 45px;
+    height: 45px;
+    width: 55px;
   }
   .skill-section-body-card div {
     font-size: 9px;
   }
 }
-
+@media (max-width: 350px) {
+  .skill-section-body-card {
+    height: 68px;
+    width: 80px;
+  }
+  .skill-section-body-card img {
+    height: 40px;
+  }
+  .skill-section-body {
+    padding-top:0.5rem ;
+  }
+}
 /* skills section end ... */
 
 /* Project section start ... */
