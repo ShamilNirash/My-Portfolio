@@ -1158,6 +1158,9 @@ a {
 }
 /*******************************************/
 @media(max-width:900px){
+  .project-section-heading h1 {
+    font-size: 3.75rem;
+  } 
   .project-section-content {
     margin-top: 5rem;
     grid-template-columns: auto auto;
@@ -1167,6 +1170,9 @@ a {
   }
 }
 @media (max-width: 700px) {
+  .project-section-heading h1 {
+    font-size: 3.5rem;
+  } 
   .project-section-project {
     height: 170px;
     width: 180px;
@@ -1198,6 +1204,9 @@ a {
   }
 }
 @media(max-width:370px){
+  .project-section-heading h1 {
+    font-size: 3.25rem;
+  } 
   .project-section-project {
     height: 160px;
     width: 120px;
