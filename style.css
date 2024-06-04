@@ -990,6 +990,7 @@ a {
   background-color: var(--theme-color);
   transition: 0.3s ease;
   cursor: pointer;
+  transform: scale(1.02);
 }
 .skill-section-body-card img {
   height: 90px;
@@ -1330,13 +1331,13 @@ a {
 
 /* Contact section start ... */
 .contact-section {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-color: var(--background-color-1);
-  padding: 0 6%;
+  padding: 0 6% ;
 }
 .contact-section-heading {
-  padding-top: 18vh;
+  /* padding-top: 1vh; */
   display: flex;
   width: 100%;
   height: 15vh;
@@ -1354,7 +1355,7 @@ a {
 
 .contact-section-form {
   color: var(--font-color);
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1376,7 +1377,7 @@ a {
 }
 
 .contact-section-form .message {
-  height: 15rem;
+  height: 10rem;
   display: flex;
   align-items: self-start;
 }
@@ -1448,12 +1449,17 @@ a {
 }
 @media (max-width: 350px) {
   .contact-section-form .message {
-    height: 10rem;
+    height: 8rem;
+  }
+  .contact-section-form button {
+    height: 4rem;
+    margin-top: 1rem;
   }
 }
 /* Contact section end ... */
 /* Footer section start ... */
 .footer {
+  margin-top: 2rem;
   width: 100%;
   height: 10vh;
   display: flex;
