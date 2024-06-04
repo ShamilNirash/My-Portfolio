@@ -14,10 +14,9 @@ const navbarOptionsFirstTab = document.querySelector(
   ".navbar-options-first-tab"
 );
 const addBlurEffectSection = document.querySelectorAll(".addBlurEffectSection");
-
 let isNavbarOpen = false;
 
-// navbar mobile view list button toggle
+/******************navbar mobile view list icon toggle****************************************************/
 nav_bar_icon.addEventListener("click", () => {
   isNavbarOpen = !isNavbarOpen;
   if (isNavbarOpen) {
@@ -55,8 +54,8 @@ nav_bar_icon.addEventListener("click", () => {
     });
   }
 });
-
-// nav option toggle
+/*****************************************************************************************************/
+/******************navbar mobile view list options toggle****************************************************/
 navLinks.forEach(function (navLink) {
   navLink.addEventListener("click", function (e) {
     e.preventDefault();
@@ -88,8 +87,8 @@ navLinks.forEach(function (navLink) {
     });
   });
 });
-
-// Project mobile section carousel
+/******************************************************************************************************/
+/************* Project mobile section carousel*********************************************************/
 window.onscroll = () => {
   sections.forEach((section) => {
     let top = window.scrollY;
@@ -111,7 +110,6 @@ window.onscroll = () => {
     }
   });
 };
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -140,8 +138,8 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-
-//contact section
+/*****************************************************************************************************/
+/***********************************************contact section message btn***************************/
 contactSubmitBtn.addEventListener("click", () => {
   var msg =
     "name : " +
@@ -187,3 +185,4 @@ contactSubmitBtn.addEventListener("click", () => {
     }
   });
 });
+/*****************************************************************************************************/
