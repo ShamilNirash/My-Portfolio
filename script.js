@@ -13,9 +13,16 @@ const barIcon = document.querySelector(".fa-bars");
 const navbarOptionsFirstTab = document.querySelector(
   ".navbar-options-first-tab"
 );
+const navbarName = document.querySelector(".navbar-my-name");
+const homeSection = document.querySelector(".home section");
 const addBlurEffectSection = document.querySelectorAll(".addBlurEffectSection");
 let isNavbarOpen = false;
 
+/******************navbar name section toggle*************************************************************/
+navbarName.addEventListener('click',()=>{
+  window.scrollTo({ top: 0, behavior: "smooth" });
+})
+/*********************************************************************************************************/
 /******************navbar mobile view list icon toggle****************************************************/
 nav_bar_icon.addEventListener("click", () => {
   isNavbarOpen = !isNavbarOpen;
