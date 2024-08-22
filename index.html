@@ -1,361 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ADD tab icon -->
+    <link rel="shortcut icon" type="x-icon" href="./assests/briefcase .png" />
+    <!--ADD css sheet -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="color.css" type="text/css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- ADD tab icon -->
-  <link rel="shortcut icon" type="x-icon" href="./assests/briefcase .png">
-  <!--ADD css sheet -->
-  <link href="style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" href="color.css" type="text/css" />
+    <!--ADD Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
-  <!--ADD Font Awesome  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- add AOS JS library css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>My Portfolio</title>
+  </head>
 
-  <!-- add AOS JS library css -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>My Portfolio</title>
-</head>
-
-<body>
-
-  <!-- Nav bar start ... -->
-  <div class="home section " id="home">
-    <div class="navbar ">
-      <div class="navbar-mobile-view" >
-        <div class="navbar-my-name">
-          <span class="navbar-my-name-S">S</span>hamil Nirash
-        </div>
-        <div class="navbar-options">
-          <div class="navbar-options-first-tab">
-          <a class="navbar-section active " id="home" href="home">Home</a>
-          <a class="navbar-section " id="about" href="about">About</a>
-          <a class="navbar-section" id="skills" href="skills">Skills</a>
-          <a class="navbar-section" id="projects" href="projects">Projects</a>
-          <a class="navbar-section" id="contact" href="contact">Contact </a>
-        </div>
-          <div class="nav-cv-in-mobile">
-            <div class="navbar-cv"><a href="./assests/my cv.pdf" download="M.S. Nirash CV.pdf">Download CV</a></div>
+  <body>
+    <!-- Nav bar start ... -->
+    <div class="home section" id="home">
+      <div class="navbar">
+        <div class="navbar-mobile-view">
+          <div class="navbar-my-name">
+            <span class="navbar-my-name-S">S</span>hamil Nirash
           </div>
-        </div>
+          <div class="navbar-options">
+            <div class="navbar-options-first-tab">
+              <a class="navbar-section active" id="home" href="home">Home</a>
+              <a class="navbar-section" id="about" href="about">About</a>
+              <a class="navbar-section" id="skills" href="skills">Skills</a>
+              <a class="navbar-section" id="projects" href="projects"
+                >Projects</a
+              >
+              <a class="navbar-section" id="contact" href="contact">Contact </a>
+            </div>
+            <div class="nav-cv-in-mobile">
+              <div class="navbar-cv">
+                <a href="./assests/my cv.pdf" download="M.S. Nirash CV.pdf"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
           <div class="navbar-mobile-bar"><i class="fa-solid fa-bars"></i></div>
-
+        </div>
       </div>
-    </div>
-    <!-- Nav bar end ... -->
-    <!-- Home section start ... -->
-    <div class="home-section"  >
-      <div class="home-section-intro" data-aos="fade-in">
-        <div class="home-section-intro-paragraph">
-          <h1 class="home-section-my-name">Hi, I'm <span>Shamil</span></h1>
-          <h3 class="home-section-my-positions">I'm a <span>Full Stack Engineer</span></h3>
-          <p class="home-section-my-description">I am self motivated, dedicated and
-            ambitious computer science
-            undergraduate with and interest to
-            gain more experiences, learning new
-            things while working and I'm eager to
-            challenged in order to grow and
-            improve my career path in the
-            industry.</p>
-          <div class="nav-cv-in">
-            <div class="navbar-cv"><a href="./assests/my cv.pdf" download="M.S. Nirash CV.pdf">Download CV</a></div>
+      <!-- Nav bar end ... -->
+      <!-- Home section start ... -->
+      <div class="home-section">
+        <div class="home-section-intro" data-aos="fade-in">
+          <div class="home-section-intro-paragraph">
+            <h1 class="home-section-my-name">Hi, I'm <span>Shamil</span></h1>
+            <h3 class="home-section-my-positions">
+              I'm a <span>Full Stack Engineer</span>
+            </h3>
+            <p class="home-section-my-description">
+              I am self motivated, dedicated and ambitious computer science
+              undergraduate with and interest to gain more experiences, learning
+              new things while working and I'm eager to challenged in order to
+              grow and improve my career path in the industry.
+            </p>
+            <div class="nav-cv-in">
+              <div class="navbar-cv">
+                <a href="./assests/my cv.pdf" download="M.S. Nirash CV.pdf"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="home-section-social-media">
+            <a
+              class="logo-links"
+              href="https://www.linkedin.com/in/shamil-nirash-5251a1219"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a class="logo-links" href="https://github.com/ShamilNirash"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              class="logo-links"
+              href="https://www.facebook.com/shamil.mahagamage/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="logo-links" href="https://www.instagram.com/ms_nirash/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              class="logo-links"
+              href="https://stackoverflow.com/users/23671068/shamil-nirash"
+              ><i class="fa-brands fa-stack-overflow"></i
+            ></a>
+            <a
+              class="logo-links"
+              href="https://www.hackerrank.com/profile/shamilnirash"
+            >
+              <i class="fa-brands fa-hackerrank"></i
+            ></a>
           </div>
         </div>
-        <div class="home-section-social-media">
-          <a class="logo-links" href="https://www.linkedin.com/in/shamil-nirash-5251a1219"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a class="logo-links" href="https://github.com/ShamilNirash"><i class="fa-brands fa-github "></i></a>
-          <a class="logo-links" href="https://www.facebook.com/shamil.mahagamage/"><i
-              class="fa-brands fa-facebook"></i></a>
-          <a class="logo-links" href="https://www.instagram.com/ms_nirash/"><i class="fa-brands fa-instagram"></i></a>
-          <a class="logo-links" href="https://stackoverflow.com/users/23671068/shamil-nirash"><i
-              class="fa-brands fa-stack-overflow"></i></a>
-          <a class="logo-links" href="https://www.hackerrank.com/profile/shamilnirash"> <i
-              class="fa-brands  fa-hackerrank"></i></i></a>
-
-        </div>
-
-      </div>
-      <div class="home-section-body-profile-pic">
-        <div id="particlesAnimationDiv"></div>
-        <img src="./assests/profile pic.png" alt="my profile picture">
-     </div>
-
-    </div>
-
-
-
-
-
-
-    <!-- mobile view home section start-->
-    <div class="mobile-view-home-section addBlurEffectSection"  data-aos="fade-in" >
-      <div class="mobile-view-home-section-first-set">
-      <h1 class="mobile-view-home-section-my-name"  data-aos="fade-in">Hi, I'm <span>Shamil</span></h1>
-      <h3 class="mobile-view-home-section-my-positions" data-aos="fade-in">I'm a <br><span>Full Stack Engineer</span></h3>
-      <p class="mobile-view-home-section-my-description"  data-aos="fade-in">I am self motivated, dedicated and
-        ambitious computer science
-        undergraduate with and interest to
-        gain more experiences, learning new
-        things while working and I'm eager to
-        challenged in order to grow and
-        improve my career path in the
-        industry.</p></div>
         <div class="home-section-body-profile-pic">
-          <img src="./assests/profile pic.png" alt="my profile picture">
-       </div>
-      <div class="mobile-view-home-section-social-media" >
-        <a class="logo-links" href="https://www.linkedin.com/in/shamil-nirash-5251a1219"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a class="logo-links" href="https://github.com/ShamilNirash"><i class="fa-brands fa-github "></i></a>
-        <a class="logo-links" href="https://www.facebook.com/shamil.mahagamage/"><i
-            class="fa-brands fa-facebook"></i></a>
-        <a class="logo-links" href="https://www.instagram.com/ms_nirash/"><i class="fa-brands fa-instagram"></i></a>
-        <a class="logo-links" href="https://stackoverflow.com/users/23671068/shamil-nirash"><i
-            class="fa-brands fa-stack-overflow"></i></a>
-        <a class="logo-links" href="https://www.hackerrank.com/profile/shamilnirash"> <i
-            class="fa-brands  fa-hackerrank"></i></i></a>
-
-      </div>
-      <!-- mobile view home section end -->
-    </div>
-
-  </div>
-
-
-  <!-- Home section end ... -->
-
-
-  <!-- About section design start ...  -->
-  <div class="about-section section addBlurEffectSection" id="about">
-    <div class="about-section-heading"><h1  data-aos="header-down">ABOUT  <span>ME</span></h1></div>
-    <div class="about-section-body" >
-      <div class="about-section-body-description" data-aos="fade-up"  >
-          <div class="about-section-body-description-about-me"  >
-           I am a dedicated and passionate
-             undergraduate student at the University of Sri Jayewardenepura,
-              currently pursuing a BSc (Hon's) degree in Computer Science.
-              I have some experience in MEAN Stack and I am proficient in 
-                Html, CSS, JavaScript, Bootstrap, Node.js, Express.js. I know about Mongodb, MySQL, Java, Python, C and many other technologies.</div>
-                <div class="about-section-body-description-personal-info">
-                  <h3  >Personal Info</h3>
-                  <div class="about-section-body-description-personal-info-body"  >
-                    <li><span>Name : </span>Shamil Nirash</li>
-                    <li><span>Age : </span>25 Years Old</li>
-                  <li><span>Address :</span> 210/1, Ihala Bomiriya, Kaduwela</li>
-                  <li><span>Email :</span> shamilnirash@gmail.com<a></a></li>
-                  <li><span>Phone No :</span> (+94)76 9444098</li>
-                  </div>
-                  
-                </div>
-                <div class="about-section-body-description-education"     >
-                  <h3  >Education </h3>
-                  <div class="about-section-body-description-education-body">
-                    <li><span>2021-reading</span> - BSc (Hon's) in Computer Science (University of Sri Jayewardenepura)</li>
-                    <li><span>2020 </span>- Diploma in Buisness IT (SIBT Campus)</li>
-                    <li><span>2019 </span>- A/L - Bomiriya National College, Kaduwela</li>
-                  </div>
-                </div>
-        
-      </div>   
-     
-    </div>
-</div>
-  <!-- About section end -->
-  <!-- education section start ... -->
-  <div class="skill-section section addBlurEffectSection" id="skills">
-    <div class="skill-section-header">
-      <h1 data-aos="header-down">Skills</h1>
-    </div>
-    <div class="skill-section-body" data-aos="flip-left">
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/html logo.png" alt="html logo">
-        <div>HTML</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/css logo.png" alt="css logo">
-        <div>CSS</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/javascript logo.png" alt="javascript logo">
-        <div>JAVASCRIPT</div>
-      </div>
-
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/bootstrap logo.png" alt="javascript logo">
-        <div>BOOTSTRAP</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/tailwind css logo.png" alt="javascript logo">
-        <div>TAILWIND CSS</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/angular logo.png" alt="javascript logo">
-        <div>ANGULAR</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/node js logo.png" alt="javascript logo">
-        <div>NODE JS</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/express js logo.png" alt="javascript logo">
-        <div>EXPRESS JS</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/mongodb logo.png" alt="javascript logo">
-        <div>MONGODB</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/my sql logo.png" alt="javascript logo">
-        <div>MY SQL</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/java logo.png" alt="javascript logo">
-        <div>JAVA</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/python logo.png" alt="javascript logo">
-        <div>PYTHON</div>
-      </div>
-      <div class="skill-section-body-card">
-        <img src="./assests/skills-logo/c logo.png" alt="javascript logo">
-        <div>C </div>
-      </div>
-    </div>
-    
-  </div>
-
-  <!-- education section end ... -->
-  <!-- project section start ... -->
-  <div class="project-section section addBlurEffectSection" id="projects">
-    <div class="project-section-heading">
-      <h1 data-aos="header-down">Projects</h1>
-    </div>
-    <div class="project-section-content" data-aos="flip-down">
-      <div class="project-section-project" >
-        <img src="./assests/projects icons/pizza order app thumbnail.jpg" alt="pizza order site thumbnail">
-        <div class="project-section-project-description">
-          <h3>Pizza Ordering Site </h3>
-          <p>Use MEAN Stack. This site is an online pizza ordering site. </p>
-          <a class="logo-link" href="https://github.com/ShamilNirash/Pizza-Ordering-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>  
-      </div>
-
-      <div class="project-section-project" >
-        <img src="./assests/projects icons/my portfolio.jpg" alt="my portfolio site thumbnail">
-        <div class="project-section-project-description">
-          <h3>My Portfolio </h3>
-          <p>Use  html, css, javascript and bootstrap </p>
-          <a class="logo-link" href="https://github.com/ShamilNirash/My-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <div id="particlesAnimationDiv"></div>
+          <img src="./assests/profile pic.png" alt="my profile" />
         </div>
       </div>
 
-        <div class="project-section-project" >
-          <img src="./assests/projects icons/bank management system.jpg" alt="bank management system thumbnail">
-          <div class="project-section-project-description">
-            <h3>Bank Management System </h3>
-            <p>Use  C Language. this system design for manage bank accounts. </p>
-            <a class="logo-link" href="https://github.com/ShamilNirash/Banking-Management-System-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>    
-    </div>
-</div>
-   <!-- Slideshow container -->
-   <div class="slideshow-container mobile-view-project-section " data-aos="flip-down">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <div class="mySlides ">
-      <div class="project-section-project" >
-        <img src="./assests/projects icons/pizza order app thumbnail.jpg" alt="pizza order site thumbnail">
-        <div class="project-section-project-description">
-          <h3>Pizza Ordering Site </h3>
-          <p>Use MEAN Stack. This site is an online pizza ordering site. </p>
-          <a class="logo-link" href="https://github.com/ShamilNirash/Pizza-Ordering-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>    
+      <!-- mobile view home section start-->
+      <div
+        class="mobile-view-home-section addBlurEffectSection"
+        data-aos="fade-in"
+      >
+        <div class="mobile-view-home-section-first-set">
+          <h1 class="mobile-view-home-section-my-name" data-aos="fade-in">
+            Hi, I'm <span>Shamil</span>
+          </h1>
+          <h3 class="mobile-view-home-section-my-positions" data-aos="fade-in">
+            I'm a <br /><span>Full Stack Engineer</span>
+          </h3>
+          <p class="mobile-view-home-section-my-description" data-aos="fade-in">
+            I am self motivated, dedicated and ambitious computer science
+            undergraduate with and interest to gain more experiences, learning
+            new things while working and I'm eager to challenged in order to
+            grow and improve my career path in the industry.
+          </p>
+        </div>
+        <div class="home-section-body-profile-pic">
+          <img src="./assests/profile pic.png" alt="my profile" />
+        </div>
+        <div class="mobile-view-home-section-social-media">
+          <a
+            class="logo-links"
+            href="https://www.linkedin.com/in/shamil-nirash-5251a1219"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a class="logo-links" href="https://github.com/ShamilNirash"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="logo-links"
+            href="https://www.facebook.com/shamil.mahagamage/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="logo-links" href="https://www.instagram.com/ms_nirash/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            class="logo-links"
+            href="https://stackoverflow.com/users/23671068/shamil-nirash"
+            ><i class="fa-brands fa-stack-overflow"></i
+          ></a>
+          <a
+            class="logo-links"
+            href="https://www.hackerrank.com/profile/shamilnirash"
+          >
+            <i class="fa-brands fa-hackerrank"></i
+          ></a>
+        </div>
+        <!-- mobile view home section end -->
       </div>
     </div>
-    <div class="mySlides ">
-        <div class="project-section-project" >
-          <img src="./assests/projects icons/bank management system.jpg" alt="bank management system thumbnail">
-          <div class="project-section-project-description">
-            <h3>Bank Management System </h3>
-            <p>Use  C Language. this system design for manage bank accounts. </p>
-            <a class="logo-link" href="https://github.com/ShamilNirash/Banking-Management-System-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+    <!-- Home section end ... -->
+
+    <!-- About section design start ...  -->
+    <div class="about-section section addBlurEffectSection" id="about">
+      <div class="about-section-heading">
+        <h1 data-aos="header-down">ABOUT <span>ME</span></h1>
+      </div>
+      <div class="about-section-body">
+        <div class="about-section-body-description" data-aos="fade-up">
+          <div class="about-section-body-description-about-me">
+            I am a dedicated and passionate undergraduate student at the
+            University of Sri Jayewardenepura, currently pursuing a BSc (Hon's)
+            degree in Computer Science. I have some experience in MEAN Stack and
+            I am proficient in Html, CSS, JavaScript, Bootstrap, Node.js,
+            Express.js. I know about Mongodb, MySQL, Java, Python, C and many
+            other technologies.
           </div>
-      </div>
-    </div>
-      <div class="mySlides ">
-      <div class="project-section-project" >
-        <img src="./assests/projects icons/my portfolio.jpg" alt="my portfolio site thumbnail">
-        <div class="project-section-project-description">
-          <h3>My Portfolio </h3>
-          <p>Use  html, css, javascript and bootstrap </p>
-          <a class="logo-link" href="https://github.com/ShamilNirash/My-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <div class="about-section-body-description-personal-info">
+            <h3>Personal Info</h3>
+            <div class="about-section-body-description-personal-info-body">
+              <li><span>Name : </span>Shamil Nirash</li>
+              <li><span>Age : </span>25 Years Old</li>
+              <li><span>Address :</span> 210/1, Ihala Bomiriya, Kaduwela</li>
+              <li><span>Email :</span> shamilnirash@gmail.com<a></a></li>
+              <li><span>Phone No :</span> (+94)76 9444098</li>
+            </div>
+          </div>
+          <div class="about-section-body-description-education">
+            <h3>Education</h3>
+            <div class="about-section-body-description-education-body">
+              <li>
+                <span>2021-reading</span> - BSc (Hon's) in Computer Science
+                (University of Sri Jayewardenepura)
+              </li>
+              <li><span>2020 </span>- Diploma in Buisness IT (SIBT Campus)</li>
+              <li>
+                <span>2019 </span>- A/L - Bomiriya National College, Kaduwela
+              </li>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  
-   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  </div>
-  <!-- project section end ... -->
+    <!-- About section end -->
+    <!-- education section start ... -->
+    <div class="skill-section section addBlurEffectSection" id="skills">
+      <div class="skill-section-header">
+        <h1 data-aos="header-down">Skills</h1>
+      </div>
+      <div class="skill-section-body" data-aos="flip-left">
+        <div class="skill-section-body-card">
+          <img src="./assests/skills-logo/html logo.png" alt="html logo" />
+          <div>HTML</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img src="./assests/skills-logo/css logo.png" alt="css logo" />
+          <div>CSS</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/javascript logo.png"
+            alt="javascript logo"
+          />
+          <div>JAVASCRIPT</div>
+        </div>
 
-<!--Contact section start ...  -->
-<div class="contact-section section addBlurEffectSection" id="contact">
-  <div class="contact-section-heading">
-    <h1 data-aos="header-down">Contact <span>Me</span></h1>
-  </div>
-    <div class="contact-section-form" data-aos="flip-right">
-      <div><label for="name">Your name</label><br>
-        <input type="text" id="form-name" placeholder="Eg: John Francis"></div>
-      
-       <div><label for="email">Your email</label><br>
-         <input type="email" id="form-email" placeholder="Eg: John@example.com"></div>
-      
-      <div>
-        <label for="message">Message</label><br>
-         <input class='message' id="form-message" type="text" placeholder="write message here ...">
-       </div>
-     <button class="contact-section-submitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/bootstrap logo.png"
+            alt="javascript logo"
+          />
+          <div>BOOTSTRAP</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/tailwind css logo.png"
+            alt="javascript logo"
+          />
+          <div>TAILWIND CSS</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/angular logo.png"
+            alt="javascript logo"
+          />
+          <div>ANGULAR</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/node js logo.png"
+            alt="javascript logo"
+          />
+          <div>NODE JS</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/express js logo.png"
+            alt="javascript logo"
+          />
+          <div>EXPRESS JS</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/mongodb logo.png"
+            alt="javascript logo"
+          />
+          <div>MONGODB</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/my sql logo.png"
+            alt="javascript logo"
+          />
+          <div>MY SQL</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/java logo.png"
+            alt="javascript logo"
+          />
+          <div>JAVA</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img
+            src="./assests/skills-logo/python logo.png"
+            alt="javascript logo"
+          />
+          <div>PYTHON</div>
+        </div>
+        <div class="skill-section-body-card">
+          <img src="./assests/skills-logo/c logo.png" alt="javascript logo" />
+          <div>C</div>
+        </div>
+      </div>
     </div>
-      
-</div>
 
-<!-- Contact section end ...-->
-<!-- Footer section start ... -->
-<div class="footer addBlurEffectSection">
-  2024 Shamil Nirash, &copy; All Rights Reserved.
-</div>
-<!-- Footer section end ... -->
- <!-- Particle Animation Link start -->
- <script src="./JS Animation libraries/particleAnimation/particles.min.js"></script>
- <script src="./JS Animation libraries/particleAnimation/particlesAnimation.js"></script>
-<!-- Particle Animation Link end -->
- <!-- connect smtpjs to send mails -->
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<!-- add sweet alert cdn  -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <script src="script.js"></script>
-<!-- add AOS Js library  -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    offset:300,
-    duration: 1400
-  }
-   
-  );
-</script>
-</body>
+    <!-- education section end ... -->
+    <!-- project section start ... -->
+    <div class="project-section section addBlurEffectSection" id="projects">
+      <div class="project-section-heading">
+        <h1 data-aos="header-down">Projects</h1>
+      </div>
+      <div class="project-section-content" data-aos="flip-down">
+        <div class="project-section-project">
+          <img
+            src="./assests/projects icons/pizza order app thumbnail.jpg"
+            alt="pizza order site thumbnail"
+          />
+          <div class="project-section-project-description">
+            <h3>Pizza Ordering Site</h3>
+            <p>Use MEAN Stack. This site is an online pizza ordering site.</p>
+            <a
+              class="logo-link"
+              href="https://github.com/ShamilNirash/Pizza-Ordering-App"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
 
+        <div class="project-section-project">
+          <img
+            src="./assests/projects icons/my portfolio.jpg"
+            alt="my portfolio site thumbnail"
+          />
+          <div class="project-section-project-description">
+            <h3>My Portfolio</h3>
+            <p>Use html, css, javascript and bootstrap</p>
+            <a
+              class="logo-link"
+              href="https://github.com/ShamilNirash/My-Portfolio"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="project-section-project">
+          <img
+            src="./assests/projects icons/bank management system.jpg"
+            alt="bank management system thumbnail"
+          />
+          <div class="project-section-project-description">
+            <h3>Bank Management System</h3>
+            <p>Use C Language. this system design for manage bank accounts.</p>
+            <a
+              class="logo-link"
+              href="https://github.com/ShamilNirash/Banking-Management-System-"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Slideshow container -->
+      <div
+        class="slideshow-container mobile-view-project-section"
+        data-aos="flip-down"
+      >
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <div class="mySlides">
+          <div class="project-section-project">
+            <img
+              src="./assests/projects icons/pizza order app thumbnail.jpg"
+              alt="pizza order site thumbnail"
+            />
+            <div class="project-section-project-description">
+              <h3>Pizza Ordering Site</h3>
+              <p>Use MEAN Stack. This site is an online pizza ordering site.</p>
+              <a
+                class="logo-link"
+                href="https://github.com/ShamilNirash/Pizza-Ordering-App"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides">
+          <div class="project-section-project">
+            <img
+              src="./assests/projects icons/bank management system.jpg"
+              alt="bank management system thumbnail"
+            />
+            <div class="project-section-project-description">
+              <h3>Bank Management System</h3>
+              <p>
+                Use C Language. this system design for manage bank accounts.
+              </p>
+              <a
+                class="logo-link"
+                href="https://github.com/ShamilNirash/Banking-Management-System-"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides">
+          <div class="project-section-project">
+            <img
+              src="./assests/projects icons/my portfolio.jpg"
+              alt="my portfolio site thumbnail"
+            />
+            <div class="project-section-project-description">
+              <h3>My Portfolio</h3>
+              <p>Use html, css, javascript and bootstrap</p>
+              <a
+                class="logo-link"
+                href="https://github.com/ShamilNirash/My-Portfolio"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <!-- project section end ... -->
+
+    <!--Contact section start ...  -->
+    <div class="contact-section section addBlurEffectSection" id="contact">
+      <div class="contact-section-heading">
+        <h1 data-aos="header-down">Contact <span>Me</span></h1>
+      </div>
+      <div class="contact-section-form" data-aos="flip-right">
+        <div>
+          <label for="name">Your name</label><br />
+          <input type="text" id="form-name" placeholder="Eg: John Francis" />
+        </div>
+
+        <div>
+          <label for="email">Your email</label><br />
+          <input
+            type="email"
+            id="form-email"
+            placeholder="Eg: John@example.com"
+          />
+        </div>
+
+        <div>
+          <label for="message">Message</label><br />
+          <input
+            class="message"
+            id="form-message"
+            type="text"
+            placeholder="write message here ..."
+          />
+        </div>
+        <button class="contact-section-submitBtn">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact section end ...-->
+    <!-- Footer section start ... -->
+    <div class="footer addBlurEffectSection">
+      2024 Shamil Nirash, &copy; All Rights Reserved.
+    </div>
+    <!-- Footer section end ... -->
+    <!-- Particle Animation Link start -->
+    <script src="./JS Animation libraries/particleAnimation/particles.min.js"></script>
+    <script src="./JS Animation libraries/particleAnimation/particlesAnimation.js"></script>
+    <!-- Particle Animation Link end -->
+    <!-- connect smtpjs to send mails -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- add sweet alert cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <!-- add AOS Js library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1400,
+      });
+    </script>
+  </body>
 </html>
