@@ -402,6 +402,12 @@ a {
   color: var(--theme-color);
   font-size: 30px;
 }
+#particlesAnimationDiv {
+  position: absolute;
+  width: 48%;
+  height: 95vh;
+  z-index: -1;
+}
 .home-section-body-profile-pic {
   display: flex;
   height: 85vh;
@@ -410,20 +416,12 @@ a {
   align-items: center;
 }
 .home-section-body-profile-pic img {
-  height: 350px;
+  height: 400px;
   width: 350px;
-  object-fit: cover;
+  object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: var(--background-color-1);
-  border: 3px solid var(--theme-color);
-  box-shadow: 0 2px 4px 4px var(--theme-color);
-}
-.home-section-body-profile-pic img:hover {
-  box-shadow: 0 0 25px var(--theme-color), 0 0 25px var(--theme-color),
-    0 0 25px var(--theme-color);
 }
 .nav-cv-in {
   margin-top: 2rem;
@@ -524,9 +522,8 @@ a {
   .home-section-intro-paragraph h3 {
     font-size: 36px;
   }
-  .home-section-intro-paragraph h3 span{
+  .home-section-intro-paragraph h3 span {
     font-size: 36px;
-
   }
   .home-section-body-profile-pic img {
     width: 270px;
