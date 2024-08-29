@@ -297,16 +297,17 @@ a {
 
 .home-section-intro {
   width: 60%;
-  padding-top: 5rem;
-  height: 85vh;
+  padding-top: 6%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .home-section-intro-paragraph {
-  padding-top: 7rem;
+  padding-top: 4rem;
   display: flex;
+  height: 60vh;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -369,15 +370,12 @@ a {
 }
 
 .home-section-my-description {
-  margin-top: 1.5rem;
   letter-spacing: 1px;
   text-align: justify;
   font-size: 16px;
 }
 
 .home-section-social-media {
-  margin-top: 6.5rem;
-  margin-bottom: 3rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
