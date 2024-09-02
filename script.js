@@ -17,7 +17,6 @@ const navbarName = document.querySelector(".navbar-my-name");
 const homeSection = document.querySelector(".home section");
 const addBlurEffectSection = document.querySelectorAll(".addBlurEffectSection");
 let isNavbarOpen = false;
-const blinkerCV = document.getElementById("blinker");
 /******************navbar name section toggle*************************************************************/
 navbarName.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -39,7 +38,7 @@ nav_bar_icon.addEventListener("click", () => {
     addBlurEffectSection.forEach((section) => {
       section.style.filter = "blur(15px)";
       section.style.transition = "0.3s ease";
-    });
+      section.style.zIndex = "-1";    });
   } else {
     navbar_options.style.transition = "0.3s ease";
     barIcon.classList.remove("fa-rotate-90");
@@ -193,11 +192,3 @@ contactSubmitBtn.addEventListener("click", () => {
   });
 });
 /*****************************************************************************************************/
-/* Blinker function */
-
-blinkerCV.addEventListener("click", function () {
-  // Add the 'clicked' class to the button
-  alert("2");
-  blinkerCV.classList.add("clicked");
-  document.querySelector(".navbar-cv a").classList.add("tt");
-});
