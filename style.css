@@ -462,10 +462,13 @@ a {
   animation: none;
 }
 .navbar-cv:hover a {
-  color: var(--background-color-1);
+  color: var(--background-color-1) !important;
 }
 .mobile-view-home-section {
   display: none;
+}
+.navbar-cv-link:focus {
+  color: var(--theme-color) !important;
 }
 @media (max-width: 1250px) {
   .home-section-intro {
