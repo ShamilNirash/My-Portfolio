@@ -1,7 +1,7 @@
 particlesJS("particlesAnimationDiv", {
   particles: {
     number: {
-      value: 180,
+      value: 90,
       density: {
         enable: true,
         value_area: 700,
@@ -128,3 +128,5 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+

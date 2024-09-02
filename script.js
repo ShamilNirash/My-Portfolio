@@ -17,11 +17,11 @@ const navbarName = document.querySelector(".navbar-my-name");
 const homeSection = document.querySelector(".home section");
 const addBlurEffectSection = document.querySelectorAll(".addBlurEffectSection");
 let isNavbarOpen = false;
-
+const blinkerCV = document.getElementById("blinker");
 /******************navbar name section toggle*************************************************************/
-navbarName.addEventListener('click',()=>{
+navbarName.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
-})
+});
 /*********************************************************************************************************/
 /******************navbar mobile view list icon toggle****************************************************/
 nav_bar_icon.addEventListener("click", () => {
@@ -193,3 +193,11 @@ contactSubmitBtn.addEventListener("click", () => {
   });
 });
 /*****************************************************************************************************/
+/* Blinker function */
+
+blinkerCV.addEventListener("click", function () {
+  // Add the 'clicked' class to the button
+  alert("2");
+  blinkerCV.classList.add("clicked");
+  document.querySelector(".navbar-cv a").classList.add("tt");
+});
