@@ -38,7 +38,8 @@ nav_bar_icon.addEventListener("click", () => {
     addBlurEffectSection.forEach((section) => {
       section.style.filter = "blur(15px)";
       section.style.transition = "0.3s ease";
-      section.style.zIndex = "-1";    });
+      section.style.zIndex = "-1";
+    });
   } else {
     navbar_options.style.transition = "0.3s ease";
     barIcon.classList.remove("fa-rotate-90");
@@ -192,3 +193,13 @@ contactSubmitBtn.addEventListener("click", () => {
   });
 });
 /*****************************************************************************************************/
+jQuery(function ($) {
+  $(".textillate-5").textillate({
+    loop: true,
+    minDisplayTime: 3000,
+    initialDelay: 1000,
+    in: {
+      effect: "bounce",
+    },
+  });
+});
