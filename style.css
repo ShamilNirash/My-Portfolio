@@ -664,6 +664,12 @@ a {
   }
 }
 @media (max-width: 700px) {
+  .mobile-view-home-section-my-name {
+    height: 3.6rem;
+  }
+  .mobile-my-name {
+    height: 2.8rem;
+  }
   .mobile-view-home-section-first-set{
     margin-top: 2rem;
   }
