@@ -226,6 +226,7 @@ a {
     margin-left: 2rem;
   }
   .navbar-mobile-view {
+    width: 100%;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -304,7 +305,7 @@ a {
   border-right: 2px solid var(--theme-color); /* Visible cursor effect */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(6), cursor 0.4s step-end infinite alternate ;
+  animation: typing 2s steps(6), cursor 0.4s step-end infinite alternate;
 }
 @keyframes cursor {
   50% {
@@ -315,7 +316,7 @@ a {
   from {
     width: 0;
   }
-  to{
+  to {
     width: 22rem;
   }
 }
@@ -526,6 +527,37 @@ a {
 }
 
 @media (max-width: 900px) {
+  .mobile-view-home-section-my-name {
+    display: inline-block;
+    align-self: flex-start;
+    justify-self: flex-end;
+    height: 3.6rem;
+    font-size: 3.5rem;
+  }
+  .mobile-my-name {
+    height: 3.1rem;
+    align-self: flex-start;
+    justify-self: flex-end;
+    display: inline-block;
+    width: 13rem;
+    border-right: 2px solid var(--theme-color); /* Visible cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(6), cursor 0.4s step-end infinite alternate;
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12rem;
+    }
+  }
   #particlesAnimationMobileDiv {
     display: block;
   }
@@ -552,7 +584,6 @@ a {
     width: auto;
   }
   .mobile-view-home-section h1 {
-    font-size: 4.5rem;
     width: 100%;
     color: var(--font-color);
     text-align: center;
@@ -621,65 +652,29 @@ a {
     font-size: 2.8rem;
   }
 
-  .mobile-view-home-section-my-positions span {
-    position: relative;
-  }
-
-  .mobile-view-home-section-my-positions span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color-1);
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-  }
-
-  @keyframes showRight {
-    100% {
-      width: 0;
-    }
-  }
-
+  
   .mobile-view-home-section-my-name span {
     position: relative;
   }
 
-  .mobile-view-home-section-my-name span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color-1);
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-  }
-
-  @keyframes showRight {
-    100% {
-      width: 0;
-    }
-  }
   .navbar-cv {
     font-size: 16px;
     padding: 10px 14px;
     background-color: var(--background-color-1);
   }
 }
-
 @media (max-width: 700px) {
+  .mobile-view-home-section-first-set{
+    margin-top: 2rem;
+  }
   .mobile-view-home-section h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   .mobile-view-home-section h3 {
-    font-size: 27px;
+    font-size: 25px;
   }
   .mobile-view-home-section p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .logo-links i {
     font-size: 2rem;
@@ -688,10 +683,7 @@ a {
     height: 3.5rem;
     width: 3.5rem;
   }
-  .mobile-view-home-section-pro-picture img {
-    height: 30vh;
-    width: auto;
-  }
+
   .navbar-cv {
     font-size: 14px;
     padding: 9px 10px;
@@ -701,22 +693,34 @@ a {
     height: 190px;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 350px) {
+  .mobile-view-home-section-first-set{
+    padding-top: 1rem;
+    margin-top: 0rem;
+    height: 50vh;
+  }
+  .mobile-view-home-section-my-name{
+    height: 3.0rem;
+  }
+  .mobile-my-name{
+    height: 2.3rem;
+    width: 9.3rem;
+  }
   .mobile-view-home-section {
     height: 85vh;
   }
-  .mobile-view-home-section h1 {
-    padding-top: 1rem;
+  .mobile-view-home-section  h1 {
     font-size: 2.5rem;
   }
-  .mobile-view-home-section-first-set {
-    height: 40vh;
+  .mobile-view-home-section-first-set{
+    height: 45vh;
   }
   .mobile-view-home-section h3 {
     font-size: 18px;
+    padding-top: 0.5rem;
   }
   .mobile-view-home-section p {
-    font-size: 12px;
+    font-size: 8px;
   }
   .logo-links i {
     font-size: 1.75rem;
@@ -736,7 +740,7 @@ a {
     height: 20vh;
   }
   .mobile-home-section-body-profile-pic img {
-    height: 110px;
+    height: 100px;
   }
 }
 
